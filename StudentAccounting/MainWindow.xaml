@@ -17,10 +17,10 @@
                 </Style>
             </DataGrid.Resources>
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Employee ID" Binding="{Binding  Id, UpdateSourceTrigger=PropertyChanged}" Width="150"/>
-                <DataGridTextColumn Header="Employee Name" Width="150" Binding="{Binding Name, UpdateSourceTrigger=PropertyChanged}"/>
-                <DataGridTextColumn Header="Employee Adress" Width="150" Binding="{Binding Address, UpdateSourceTrigger=PropertyChanged}"/>
-                <DataGridTextColumn Header="Employee City" Width="150" Binding="{Binding City, UpdateSourceTrigger=PropertyChanged}"/>
+                <DataGridTextColumn Header="Id" Binding="{Binding  Id, UpdateSourceTrigger=PropertyChanged}" Width="150"/>
+                <DataGridTextColumn Header="Name" Width="150" Binding="{Binding Fullname, UpdateSourceTrigger=PropertyChanged}"/>
+                <DataGridTextColumn Header="Adress" Width="150" Binding="{Binding Address, UpdateSourceTrigger=PropertyChanged}"/>
+                <DataGridTextColumn Header="Contacts" Width="150" Binding="{Binding Contacts, UpdateSourceTrigger=PropertyChanged}"/>
                 <DataGridTemplateColumn>
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
@@ -36,6 +36,6 @@
                 </DataGridTemplateColumn>
             </DataGrid.Columns>
         </DataGrid>
-        <Button x:Name="AddNewEmployeeTB" Content="ADD NEW EMPLOYEE" HorizontalAlignment="Center" FontWeight="SemiBold" Margin="0,263,0,0" VerticalAlignment="Top" Click="AddNewEmployee_Clicked"/>
+        <Button x:Name="AddNewEmployeeTB" Content="ADD" HorizontalAlignment="Center" FontWeight="SemiBold" Margin="0,263,0,0" VerticalAlignment="Top" Click="AddNewOrganization_Clicked"/>
     </Grid>
 </Window>

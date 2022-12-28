@@ -23,17 +23,18 @@ namespace StudentAccounting
     /// </summary>
     public partial class MainWindow : Window
     {
-        OrganizationService _organizationService;
+        OrganizationService _organizationService = new();
         public MainWindow()
         {
            InitializeComponent();
+            UpdateGrid();
         }
-        public void AddNewEmployee_Clicked(object sender, RoutedEventArgs e)
+        public void AddNewOrganization_Clicked(object sender, RoutedEventArgs e)
         {
             OrganizationWindow win = new OrganizationWindow();
             win.Show();
         }
-        private void UpdateGrid()
+        public void UpdateGrid()
         {
             dataGridTutorial.ItemsSource = null;
             dataGridTutorial.ItemsSource =  _organizationService.Get();

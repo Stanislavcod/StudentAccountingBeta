@@ -5,10 +5,10 @@ namespace StudentAccounting.Model
 {
     public class ApplicationDatabaseContext : DbContext
     {
-        public ApplicationDatabaseContext()
-        {
-            Database.EnsureCreated();
-        }
+        //public ApplicationDatabaseContext()
+        //{
+        //    Database.EnsureCreated();
+        //}
         protected override void OnConfiguring(DbContextOptionsBuilder _context)
         {
             _context.UseSqlServer("Server=STASVCODE\\SQLEXPRESS;DataBase=StudentAccounting;Trusted_Connection=True;TrustServerCertificate=True;");
