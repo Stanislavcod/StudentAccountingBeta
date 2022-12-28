@@ -6,9 +6,9 @@ namespace StudentAccounting.BusinessLogic.Implementations
     public class OrganizationService
     {
         private readonly ApplicationDatabaseContext _context;
-        public OrganizationService(ApplicationDatabaseContext context)
+        public OrganizationService()
         {
-            _context = context;
+            _context = new ApplicationDatabaseContext();
         }
         public void Create(Organization organization)
         {

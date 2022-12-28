@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\StudentAccounting.BusinessLogic\StudentAccounting.BusinessLogic.csproj" />
   </ItemGroup>
 
 </Project>
